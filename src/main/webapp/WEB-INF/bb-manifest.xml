@@ -10,7 +10,7 @@
     <description value="abbcontentmashupb2" />
     <default-locale value="en_US" />
 
-    <version value="0.0.1" />
+    <version value="0.0.4" />
     <requires>
       <bbversion value="3000.1.0" />
     </requires>
@@ -44,7 +44,7 @@
       </content-handler -->
 
         <content-handler>
-           <name value="InsertExternalLink"/>
+           <name value="InsertBbContentMashup"/>
            <handle value= "resource/bbmashupb2-extlink"/>
            <http-actions>
               <create value="linkjsp/insertExternalLink.jsp"/>

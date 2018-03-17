@@ -74,15 +74,15 @@
                                 String password = "Doe";
 
                                 title = "2015.03.12.17.11 Hello From Blackboard";
-	
+
                                 String description = "Link to a .jsp page in this B2 that says hello to you.";
 
 				String URL;
 
 				String bbUid = ContextManagerFactory.getInstance().getContext().getVirtualInstallation().getBbUid();
-                             
-                                URL = "../../bb-SpringExtLinkDemo-" + bbUid + "/linkjsp/hello.jsp" + "?course_id=" + courseIdString + "&content_id=" + contentIdString;
- 
+
+                                URL = "../../bbdn-abbcontentmashupb2-" + bbUid + "/linkjsp/hello.jsp" + "?course_id=" + courseIdString + "&content_id=" + contentIdString;
+
 				// add the link
 				ExternalLink extLink = new ExternalLink();
 				extLink.setTitle( title );
@@ -98,7 +98,7 @@
 				extLink.setContentHandler("resource/x-extlink");
 				ContentDbPersister contentPersister = (ContentDbPersister) bbPm.getPersister( ContentDbPersister.TYPE );
 				contentPersister.persist( extLink );
-	
+
 		} else {
 			response.sendRedirect(redirectUrl);
 		}
@@ -127,4 +127,3 @@ Your link has been inserted! Press the "Back" Arrow to view your link.
 
 
 </bbNG:learningSystemPage>
-
