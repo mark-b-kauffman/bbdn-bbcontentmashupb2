@@ -1,4 +1,4 @@
-BBMASHUP B2
+ABBCONTENTMASHUP B2
 =====================
 
 This project is based from the Spring Tool Suite (STS) Spring MVC project. We've added a bb-manifest.xml and an example of a view that uses the Blackboard Tags to render a page that has the look and feel of other Blackboard Learn pages.
@@ -11,8 +11,8 @@ https://github.com/AllTheDucks/b2-logging-utils
 Credit to Scott Hurrey for all the assistance getting this project to pre-compile JSP pages and insert them in the .war file.
 
 ### Clone to local repo
-####bitbucket:
-git clone https://markkauffman2000@bitbucket.org/markkauffman2000/bbdn-bblogback.git bbdn-bbmashupb2
+####github:
+git clone https://github.com/mark-b-kauffman/bbdn-bbcontentmashupb2.git bbdn-bbcontentmashupb2
 
 ### Building
 To build the project, just run:
@@ -26,6 +26,6 @@ To deploy the B2 to your Learn server, run:
 
 Example: ./gradlew -Dserver=localhost:9876 deployB2
 
-Home URL Example: `https://<hostname>/webapps/bbdn-bbmashupb2-BBLEARN/`
+Home URL Example: `https://<hostname>/webapps/bbdn-abbcontentmashupb2-BBLEARN/`
 
-Continual Logging URL Example: `https://<hostname>/webapps/bbdn-bbmashupb2-BBLEARN/logbacklog`
+Continual Logging URL Example: `https://<hostname>/webapps/bbdn-abbcontentmashupb2-BBLEARN/logbacklog`
